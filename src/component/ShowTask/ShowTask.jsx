@@ -19,8 +19,9 @@ export default function ShowTask({ tasks, setTasks }) {
             background: "#e6e6e6",
             padding: "1rem",
             borderRadius: "5px",
-            height: "100%",
-            overflow: "auto",
+            maxHeight: "90vh",
+            // height: "100%",
+            overflowY: "auto",
             "::-webkit-scrollbar": {
               display: "none",
             },

@@ -12,8 +12,7 @@ function ProjectTodoList() {
     <Box
       sx={{
         border: "1px solid #9d9595",
-        height: "100%",
-        minHeight: "100vh",
+        height: "100vh",
         position: "relative",
       }}
     >
