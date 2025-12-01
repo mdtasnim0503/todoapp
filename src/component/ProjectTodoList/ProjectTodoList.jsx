@@ -38,6 +38,7 @@ function ProjectTodoList() {
           right: "20px",
           borderRadius: "50%",
           padding: ".8rem",
+          border: "10px solid red",
         }}
       >
         <AddIcon />
