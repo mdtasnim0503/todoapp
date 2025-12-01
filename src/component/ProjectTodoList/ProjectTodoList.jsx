@@ -21,7 +21,7 @@ function ProjectTodoList() {
         sx={{
           background: "#0B6BCB",
           p: "1rem",
-          height: "5rem",
+          height: "4rem",
         }}
       >
         <Typography level="title-lg" sx={{ color: "#fff" }}>
@@ -39,7 +39,6 @@ function ProjectTodoList() {
           right: "20px",
           borderRadius: "50%",
           padding: ".8rem",
-          border: "10px solid red",
         }}
       >
         <AddIcon />
