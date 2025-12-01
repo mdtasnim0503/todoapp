@@ -8,7 +8,6 @@ import ShowTask from "../ShowTask/ShowTask";
 function ProjectTodoList() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [tasks, setTasks] = useState([]);
-
   return (
     <Box
       sx={{
@@ -43,8 +42,8 @@ function ProjectTodoList() {
       >
         <AddIcon />
       </Button>
-
       <Drawer
+        // disablePortal
         anchor="bottom"
         size="sm"
         open={drawerOpen}

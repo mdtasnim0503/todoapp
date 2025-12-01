@@ -19,7 +19,7 @@ export default function ShowTask({ tasks, setTasks }) {
             background: "#e6e6e6",
             padding: "1rem",
             borderRadius: "5px",
-            height: "560px",
+            height: "100%",
             overflow: "auto",
             "::-webkit-scrollbar": {
               display: "none",
@@ -37,7 +37,7 @@ export default function ShowTask({ tasks, setTasks }) {
                 background: "#fff",
                 alignItems: "center",
                 mb: "1rem",
-                maxHeight: "20rem",
+                maxHeight: "100%",
                 overflow: "auto",
                 "::-webkit-scrollbar": {
                   display: "none",
