@@ -16,7 +16,7 @@ function SearchTodo({ setDrawerOpen, setTasks }) {
     <Box sx={{ display: "flex", justifyContent: "center", height: "100vh" }}>
       <Box
         sx={{
-          width: "50%",
+          width: { xs: "80%", sm: "70%", md: "50%" },
           height: "100%",
           display: "flex",
           flexDirection: "column",
