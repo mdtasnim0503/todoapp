@@ -19,10 +19,9 @@ export default function ShowTask({ tasks, setTasks }) {
         <Box
           sx={{
             background: "#e6e6e6",
+            height: "90dvh",
             padding: "1rem",
             borderRadius: "5px",
-            maxHeight: "90vh",
-            // height: "100%",
             overflowY: "auto",
             "::-webkit-scrollbar": {
               display: "none",
