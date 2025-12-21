@@ -62,9 +62,16 @@ export default function ShowTask({ tasks, setTasks }) {
           ))}
         </Box>
       ) : (
-        <Typography textAlign="center" sx={{ mt: "5rem" }}>
-          No any Todo yet.
-        </Typography>
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            height: "70vh",
+          }}
+        >
+          <Typography>No any Todo yet.</Typography>
+        </Box>
       )}
     </Box>
   );
