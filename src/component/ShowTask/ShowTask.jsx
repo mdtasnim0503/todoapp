@@ -4,13 +4,15 @@ import { useState } from "react";
 
 export default function ShowTask({ tasks, setTasks }) {
   const [completed, setCompleted] = useState([]);
-  const handleCheck = (index) => {
-    setCompleted((e) => [...e, index]);
+  const handleCheck = (e, index) => {
+    e.target.blur();
+    setCompleted((prev) => [...prev, index]);
     setTimeout(() => {
       setTasks((prev) => prev.filter((_, i) => i !== index));
       setCompleted((prev) => prev.filter((i) => i !== index));
     }, 1000);
   };
+
   return (
     <Box>
       {Array.isArray(tasks) && tasks.length > 0 ? (
@@ -45,7 +47,7 @@ export default function ShowTask({ tasks, setTasks }) {
                 },
               }}
             >
-              <Checkbox color="primary" onClick={() => handleCheck(index)} />
+              <Checkbox color="primary" onClick={() => handleCheck(index, e)} />
               <Typography
                 sx={{
                   textDecoration: completed.includes(index)
